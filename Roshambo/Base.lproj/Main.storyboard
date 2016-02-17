@@ -33,17 +33,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0UN-OI-bqN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="Bpk-xz-dEq"/>
-                            <constraint firstItem="pUX-DR-eJe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CPk-sa-Cc3"/>
-                            <constraint firstItem="0UN-OI-bqN" firstAttribute="centerY" secondItem="pUX-DR-eJe" secondAttribute="centerY" id="Jil-o8-PtT"/>
-                            <constraint firstItem="VHC-If-Ovj" firstAttribute="centerY" secondItem="pUX-DR-eJe" secondAttribute="centerY" id="cZb-wh-gXn"/>
-                            <constraint firstItem="VHC-If-Ovj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="50%" id="hYY-Wh-M8A"/>
-                            <constraint firstItem="pUX-DR-eJe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="75%" id="iA5-Jr-k3V"/>
+                            <constraint firstItem="0UN-OI-bqN" firstAttribute="centerY" secondItem="pUX-DR-eJe" secondAttribute="centerY" id="4Fu-f8-05e"/>
+                            <constraint firstItem="pUX-DR-eJe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BiG-4C-Web"/>
+                            <constraint firstItem="VHC-If-Ovj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="50%" id="GCT-hA-719"/>
+                            <constraint firstItem="VHC-If-Ovj" firstAttribute="centerY" secondItem="pUX-DR-eJe" secondAttribute="centerY" id="LSW-xM-pz1"/>
+                            <constraint firstItem="pUX-DR-eJe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="75%" id="ciY-Hm-052"/>
+                            <constraint firstItem="0UN-OI-bqN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="qBI-i0-Wbm"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="600" y="486"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="DKY-0K-gxo">
@@ -84,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X2S-SQ-dZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1090" y="418"/>
+            <point key="canvasLocation" x="1287" y="486"/>
         </scene>
     </scenes>
     <resources>
