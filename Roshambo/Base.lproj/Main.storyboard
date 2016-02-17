@@ -9,7 +9,7 @@
         <!--Roshambo View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="RoshamboVC" id="BYZ-38-t0r" userLabel="Roshambo View Controller" customClass="ViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RoshamboVC" id="BYZ-38-t0r" userLabel="Roshambo View Controller" customClass="RoshamboViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
