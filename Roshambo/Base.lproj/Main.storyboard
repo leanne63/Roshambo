@@ -20,14 +20,26 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUX-DR-eJe" userLabel="Paper Button">
                                 <rect key="frame" x="282" y="209" width="37" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="70z-qF-pde"/>
+                                    <constraint firstAttribute="height" constant="32" id="Kgl-oo-buZ"/>
+                                </constraints>
                                 <state key="normal" image="Paper"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHC-If-Ovj" userLabel="Rock Button">
                                 <rect key="frame" x="132" y="209" width="37" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="4Sh-R8-NTn"/>
+                                    <constraint firstAttribute="width" constant="37" id="Kri-Mm-k41"/>
+                                </constraints>
                                 <state key="normal" image="Rock"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UN-OI-bqN" userLabel="Scissors Button">
                                 <rect key="frame" x="432" y="209" width="37" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="joe-lM-Sy0"/>
+                                    <constraint firstAttribute="width" constant="37" id="kR8-bL-s3T"/>
+                                </constraints>
                                 <state key="normal" image="Scissors"/>
                             </button>
                         </subviews>
