@@ -10,15 +10,19 @@ import UIKit
 
 class ResultsViewController: UIViewController {
 
+	// MARK: - Properties
+	var opponentChoice: Int?
+
 	@IBOutlet weak var resultsImage: UIImageView!
 	@IBOutlet weak var resultsLabel: UILabel!
 
-	
+	// MARK: - Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
     }
     
+	// MARK: - Actions
 	@IBAction func playAgain(sender: UIButton) {
 		dismissViewControllerAnimated(true, completion: nil)
 	}
