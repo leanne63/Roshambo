@@ -49,7 +49,7 @@
         <!--Results View Controller-->
         <scene sceneID="DKY-0K-gxo">
             <objects>
-                <viewController storyboardIdentifier="ResultsVC" id="rT4-o8-FtP" userLabel="Results View Controller" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultsVC" id="rT4-o8-FtP" userLabel="Results View Controller" customClass="ResultsViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DND-sK-yIg"/>
                         <viewControllerLayoutGuide type="bottom" id="bFq-Wu-hgL"/>
