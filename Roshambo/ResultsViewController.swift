@@ -10,9 +10,16 @@ import UIKit
 
 class ResultsViewController: UIViewController {
 
+	@IBOutlet weak var resultsImage: UIImageView!
+	@IBOutlet weak var resultsLabel: UILabel!
+
+	
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
     }
     
+	@IBAction func playAgain(sender: UIButton) {
+		dismissViewControllerAnimated(true, completion: nil)
+	}
 }

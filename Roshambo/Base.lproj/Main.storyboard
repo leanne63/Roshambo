@@ -82,6 +82,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sj0-Fe-jYd">
                                 <rect key="frame" x="265" y="285" width="71" height="30"/>
                                 <state key="normal" title="Play Again"/>
+                                <connections>
+                                    <action selector="playAgain:" destination="rT4-o8-FtP" eventType="touchUpInside" id="ZLg-fJ-bXP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -94,6 +97,10 @@
                             <constraint firstItem="Sj0-Fe-jYd" firstAttribute="centerX" secondItem="Nhf-dW-qkh" secondAttribute="centerX" id="x6s-v1-pO5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultsImage" destination="FyJ-Zh-i3W" id="NtU-Hi-M6s"/>
+                        <outlet property="resultsLabel" destination="LTQ-p5-SlR" id="SZg-ZG-5q6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X2S-SQ-dZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
