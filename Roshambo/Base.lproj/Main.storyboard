@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUX-DR-eJe" userLabel="Paper Button">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="paper" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUX-DR-eJe" userLabel="Paper Button">
                                 <rect key="frame" x="282" y="209" width="37" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="37" id="70z-qF-pde"/>
@@ -29,7 +29,7 @@
                                     <action selector="userDidChooseItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gXE-Dj-IHL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHC-If-Ovj" userLabel="Rock Button">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="rock" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHC-If-Ovj" userLabel="Rock Button">
                                 <rect key="frame" x="132" y="209" width="37" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="4Sh-R8-NTn"/>
@@ -40,7 +40,7 @@
                                     <action selector="userDidChooseItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bRi-a0-5ho"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UN-OI-bqN" userLabel="Scissors Button">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="scissors" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UN-OI-bqN" userLabel="Scissors Button">
                                 <rect key="frame" x="432" y="209" width="37" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="joe-lM-Sy0"/>
