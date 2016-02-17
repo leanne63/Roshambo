@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RoshamboViewController.swift
 //  Roshambo
 //
 //  Created by leanne on 2/17/16.
@@ -21,7 +21,22 @@ class RoshamboViewController: UIViewController {
 	}
 
 	@IBAction func userDidChooseItem(sender: UIButton) {
-		
+		guard let senderId = sender.restorationIdentifier else {
+			return
+		}
+		switch senderId {
+		case "rock":
+			print("code-only segue to rock result")
+
+		case "paper":
+			print("code and manual segue to paper result")
+			
+		case "scissors":
+			print("auto segue to scissors result")
+
+		default:
+			print(sender.restorationIdentifier)
+		}
 	}
 
 }
