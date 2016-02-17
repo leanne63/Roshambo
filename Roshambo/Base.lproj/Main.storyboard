@@ -6,10 +6,10 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Roshambo View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RoshamboVC" id="BYZ-38-t0r" userLabel="Roshambo View Controller" customClass="ViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -45,8 +45,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Results View Controller-->
+        <scene sceneID="DKY-0K-gxo">
+            <objects>
+                <viewController storyboardIdentifier="ResultsVC" id="rT4-o8-FtP" userLabel="Results View Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DND-sK-yIg"/>
+                        <viewControllerLayoutGuide type="bottom" id="bFq-Wu-hgL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nhf-dW-qkh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ItsATie" translatesAutoresizingMaskIntoConstraints="NO" id="FyJ-Zh-i3W">
+                                <rect key="frame" x="255" y="100" width="91" height="100"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock crushes Scissors!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTQ-p5-SlR">
+                                <rect key="frame" x="212" y="208" width="177" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sj0-Fe-jYd">
+                                <rect key="frame" x="265" y="285" width="71" height="30"/>
+                                <state key="normal" title="Play Again"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FyJ-Zh-i3W" firstAttribute="centerX" secondItem="Nhf-dW-qkh" secondAttribute="centerX" id="GPc-Gu-AxU"/>
+                            <constraint firstItem="FyJ-Zh-i3W" firstAttribute="centerY" secondItem="Nhf-dW-qkh" secondAttribute="centerY" multiplier="50%" id="LLa-7a-1R0"/>
+                            <constraint firstItem="LTQ-p5-SlR" firstAttribute="centerX" secondItem="FyJ-Zh-i3W" secondAttribute="centerX" id="M04-ZV-FlX"/>
+                            <constraint firstItem="Sj0-Fe-jYd" firstAttribute="centerY" secondItem="Nhf-dW-qkh" secondAttribute="centerY" id="gwC-dF-sEy"/>
+                            <constraint firstItem="LTQ-p5-SlR" firstAttribute="top" secondItem="FyJ-Zh-i3W" secondAttribute="bottom" constant="8" id="u3K-rG-sXW"/>
+                            <constraint firstItem="Sj0-Fe-jYd" firstAttribute="centerX" secondItem="Nhf-dW-qkh" secondAttribute="centerX" id="x6s-v1-pO5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X2S-SQ-dZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1090" y="418"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="ItsATie" width="91" height="100"/>
         <image name="Paper" width="37" height="32"/>
         <image name="Rock" width="37" height="32"/>
         <image name="Scissors" width="37" height="32"/>
