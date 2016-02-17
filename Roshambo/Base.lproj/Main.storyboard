@@ -25,6 +25,9 @@
                                     <constraint firstAttribute="height" constant="32" id="Kgl-oo-buZ"/>
                                 </constraints>
                                 <state key="normal" image="Paper"/>
+                                <connections>
+                                    <action selector="userDidChooseItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gXE-Dj-IHL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHC-If-Ovj" userLabel="Rock Button">
                                 <rect key="frame" x="132" y="209" width="37" height="32"/>
@@ -33,6 +36,9 @@
                                     <constraint firstAttribute="width" constant="37" id="Kri-Mm-k41"/>
                                 </constraints>
                                 <state key="normal" image="Rock"/>
+                                <connections>
+                                    <action selector="userDidChooseItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bRi-a0-5ho"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UN-OI-bqN" userLabel="Scissors Button">
                                 <rect key="frame" x="432" y="209" width="37" height="32"/>
@@ -41,6 +47,9 @@
                                     <constraint firstAttribute="width" constant="37" id="kR8-bL-s3T"/>
                                 </constraints>
                                 <state key="normal" image="Scissors"/>
+                                <connections>
+                                    <action selector="userDidChooseItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jAM-bp-nme"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
