@@ -85,10 +85,11 @@ class RoshamboViewController: UIViewController {
 	*/
 	func randomOpponentChoice() -> GameChoices {
 		// Generate a random Int32 using arc4Random, converting to Int for this purpose
-		let randomValue = Int(1 + arc4random() % 3)
+		let randomValue = 1 + arc4random() % 3
 
 		// Return a more convenient Int, initialized with the random value
-		return GameChoices(rawValue: randomValue)!
+		let randomValueInt = Int(randomValue)
+		return GameChoices(rawValue: randomValueInt)!
 	}
 
 }
