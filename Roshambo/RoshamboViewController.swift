@@ -66,7 +66,6 @@ class RoshamboViewController: UIViewController {
 		// present the view controller
 		presentViewController(resultsViewController, animated: true, completion: nil)
 
-
 	}
 
 }
