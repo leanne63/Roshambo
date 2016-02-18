@@ -8,6 +8,12 @@
 
 import UIKit
 
+enum GameChoices: Int {
+	case Rock = 1
+	case Paper
+	case Scissors
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

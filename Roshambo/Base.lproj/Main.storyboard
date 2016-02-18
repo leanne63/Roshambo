@@ -49,6 +49,7 @@
                                 <state key="normal" image="Scissors"/>
                                 <connections>
                                     <action selector="userDidChooseItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jAM-bp-nme"/>
+                                    <segue destination="rT4-o8-FtP" kind="presentation" identifier="scissorsSegue" id="T9o-OI-TAg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,6 +63,9 @@
                             <constraint firstItem="0UN-OI-bqN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="qBI-i0-Wbm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="rT4-o8-FtP" kind="presentation" identifier="paperSegue" id="oTg-37-0zO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,4 +126,7 @@
         <image name="Rock" width="37" height="32"/>
         <image name="Scissors" width="37" height="32"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="T9o-OI-TAg"/>
+    </inferredMetricsTieBreakers>
 </document>

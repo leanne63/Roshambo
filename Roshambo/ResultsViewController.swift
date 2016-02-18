@@ -11,7 +11,11 @@ import UIKit
 class ResultsViewController: UIViewController {
 
 	// MARK: - Properties
-	var opponentChoice: Int?
+	var userChoice: GameChoices!
+	var opponentChoice: GameChoices!
+
+	var userPicked: String!
+	var opponentPicked: String!
 
 	@IBOutlet weak var resultsImage: UIImageView!
 	@IBOutlet weak var resultsLabel: UILabel!
@@ -19,7 +23,10 @@ class ResultsViewController: UIViewController {
 	// MARK: - Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+
+		// TODO: remove this test code
+		print("userChoice = \(userChoice)")
+		print("opponentChoice = \(opponentChoice)")
     }
     
 	// MARK: - Actions
