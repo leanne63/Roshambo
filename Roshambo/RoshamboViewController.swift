@@ -58,6 +58,7 @@ class RoshamboViewController: UIViewController {
 		switch senderId {
 		case "rock":
 			// programmatic, so do everything in code:
+			//	(there is no segue in the storyboard for this option)
 			// instantiate results view controller
 			let resultsViewController = storyboard?.instantiateViewControllerWithIdentifier("ResultsVC") as! ResultsViewController
 
@@ -70,10 +71,12 @@ class RoshamboViewController: UIViewController {
 
 		case "paper":
 			// manual segue, so kick if off in code, and handle rest in prepareForSegue
+			//	(segue in storyboard goes from RoshamboViewController to ResultsViewController)
 			performSegueWithIdentifier("paperSegue", sender: self)
 
 		default:
 			// scissors will auto-segue, so handle everything in prepareForSegue
+			//	(segue in storyboard goes directly from scissors icon to ResultsViewController)
 			return
 		}
 	}
