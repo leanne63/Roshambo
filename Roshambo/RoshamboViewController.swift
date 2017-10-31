@@ -20,23 +20,23 @@ class RoshamboViewController: UIViewController {
 		super.viewDidLoad()
 	}
 
-	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		// ensure the segue identifier isn't nil
 		guard let segueId = segue.identifier else {
 			return
 		}
 
 		// pass self's values over to destination controller
-		let destController = segue.destinationViewController as! ResultsViewController
+		let destController = segue.destination as! ResultsViewController
 
 		destController.opponentChoice = opponentChoice
 
 		switch segueId {
 		case "paperSegue" :
-			destController.userChoice = GameChoices.Paper
+			destController.userChoice = GameChoices.paper
 
 		case "scissorsSegue":
-			destController.userChoice = GameChoices.Scissors
+			destController.userChoice = GameChoices.scissors
 
 		default:
 			// rock was a code only segue, so see userDidChooseItem for its actions
@@ -46,7 +46,7 @@ class RoshamboViewController: UIViewController {
 
 	// MARK: - Actions
 
-	@IBAction func userDidChooseItem(sender: UIButton) {
+	@IBAction func userDidChooseItem(_ sender: UIButton) {
 		// ensure the sender's resoration id isn't nil
 		guard let senderId = sender.restorationIdentifier else {
 			return
@@ -60,19 +60,19 @@ class RoshamboViewController: UIViewController {
 			// programmatic, so do everything in code:
 			//	(there is no segue in the storyboard for this option)
 			// instantiate results view controller
-			let resultsViewController = storyboard?.instantiateViewControllerWithIdentifier("ResultsVC") as! ResultsViewController
+			let resultsViewController = storyboard?.instantiateViewController(withIdentifier: "ResultsVC") as! ResultsViewController
 
 			// set values on result view controller
-			resultsViewController.userChoice = GameChoices.Rock
+			resultsViewController.userChoice = GameChoices.rock
 			resultsViewController.opponentChoice = opponentChoice
 
 			// present the view controller
-			presentViewController(resultsViewController, animated: true, completion: nil)
+			present(resultsViewController, animated: true, completion: nil)
 
 		case "paper":
 			// manual segue, so kick if off in code, and handle rest in prepareForSegue
 			//	(segue in storyboard goes from RoshamboViewController to ResultsViewController)
-			performSegueWithIdentifier("paperSegue", sender: self)
+			performSegue(withIdentifier: "paperSegue", sender: self)
 
 		default:
 			// scissors will auto-segue, so handle everything in prepareForSegue
