@@ -13,7 +13,7 @@
 		D504331C1C74F19400CD971C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D504331B1C74F19400CD971C /* Assets.xcassets */; };
 		D504331F1C74F19400CD971C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D504331D1C74F19400CD971C /* LaunchScreen.storyboard */; };
 		D50433271C74FDC900CD971C /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50433261C74FDC900CD971C /* ResultsViewController.swift */; };
-		D58F9D56225C024700F4755C /* README-TEMPLATE.md in Resources */ = {isa = PBXBuildFile; fileRef = D58F9D55225C024700F4755C /* README-TEMPLATE.md */; };
+		D58F9D56225C024700F4755C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D58F9D55225C024700F4755C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		D504331E1C74F19400CD971C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D50433201C74F19400CD971C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D50433261C74FDC900CD971C /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
-		D58F9D55225C024700F4755C /* README-TEMPLATE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "README-TEMPLATE.md"; sourceTree = "<group>"; };
+		D58F9D55225C024700F4755C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +42,7 @@
 		D50433081C74F19400CD971C = {
 			isa = PBXGroup;
 			children = (
-				D58F9D55225C024700F4755C /* README-TEMPLATE.md */,
+				D58F9D55225C024700F4755C /* README.md */,
 				D50433131C74F19400CD971C /* Roshambo */,
 				D50433121C74F19400CD971C /* Products */,
 			);
@@ -130,7 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D58F9D56225C024700F4755C /* README-TEMPLATE.md in Resources */,
+				D58F9D56225C024700F4755C /* README.md in Resources */,
 				D504331F1C74F19400CD971C /* LaunchScreen.storyboard in Resources */,
 				D504331C1C74F19400CD971C /* Assets.xcassets in Resources */,
 				D504331A1C74F19400CD971C /* Main.storyboard in Resources */,
