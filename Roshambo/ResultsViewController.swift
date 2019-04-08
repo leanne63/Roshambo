@@ -53,7 +53,7 @@ class ResultsViewController: UIViewController {
 			resultsLabel.text = "Scissors cut Paper - opponent wins!"
 			
 		default:
-			print("userChoice: \(userChoice)\nopponentChoice: \(opponentChoice)\n")
+			print("userChoice: \(String(describing: userChoice))\nopponentChoice: \(String(describing: opponentChoice))\n")
 		}
     }
     
