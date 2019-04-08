@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Roshambo View Controller-->
@@ -15,11 +19,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="paper" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUX-DR-eJe" userLabel="Paper Button">
-                                <rect key="frame" x="282" y="209" width="37" height="32"/>
+                                <rect key="frame" x="169" y="234" width="37" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="37" id="70z-qF-pde"/>
                                     <constraint firstAttribute="height" constant="32" id="Kgl-oo-buZ"/>
@@ -30,7 +34,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="rock" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHC-If-Ovj" userLabel="Rock Button">
-                                <rect key="frame" x="132" y="209" width="37" height="32"/>
+                                <rect key="frame" x="75.5" y="234" width="37" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="4Sh-R8-NTn"/>
                                     <constraint firstAttribute="width" constant="37" id="Kri-Mm-k41"/>
@@ -41,7 +45,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="scissors" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UN-OI-bqN" userLabel="Scissors Button">
-                                <rect key="frame" x="432" y="209" width="37" height="32"/>
+                                <rect key="frame" x="263" y="234" width="37" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="joe-lM-Sy0"/>
                                     <constraint firstAttribute="width" constant="37" id="kR8-bL-s3T"/>
@@ -53,7 +57,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0UN-OI-bqN" firstAttribute="centerY" secondItem="pUX-DR-eJe" secondAttribute="centerY" id="4Fu-f8-05e"/>
                             <constraint firstItem="pUX-DR-eJe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BiG-4C-Web"/>
@@ -80,27 +84,27 @@
                         <viewControllerLayoutGuide type="bottom" id="bFq-Wu-hgL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Nhf-dW-qkh">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ItsATie" translatesAutoresizingMaskIntoConstraints="NO" id="FyJ-Zh-i3W">
-                                <rect key="frame" x="255" y="100" width="91" height="100"/>
+                                <rect key="frame" x="142" y="117" width="91" height="100"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock crushes Scissors!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTQ-p5-SlR">
-                                <rect key="frame" x="212" y="208" width="177" height="21"/>
+                                <rect key="frame" x="99" y="225" width="177" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sj0-Fe-jYd">
-                                <rect key="frame" x="265" y="285" width="71" height="30"/>
+                                <rect key="frame" x="152" y="318.5" width="71" height="30"/>
                                 <state key="normal" title="Play Again"/>
                                 <connections>
                                     <action selector="playAgain:" destination="rT4-o8-FtP" eventType="touchUpInside" id="ZLg-fJ-bXP"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FyJ-Zh-i3W" firstAttribute="centerX" secondItem="Nhf-dW-qkh" secondAttribute="centerX" id="GPc-Gu-AxU"/>
                             <constraint firstItem="FyJ-Zh-i3W" firstAttribute="centerY" secondItem="Nhf-dW-qkh" secondAttribute="centerY" multiplier="50%" id="LLa-7a-1R0"/>
